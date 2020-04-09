@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
+import IndexPage from 'pages/index'
+import AshPage from 'pages/ash'
+import ManduPage from 'pages/mandu'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/ash">Ash</Link>
+          </li>
+          <li>
+            <Link to="/mandu">Mandu</Link>
+          </li>
+        </ul>
+
+        <Switch>
+          <Route exact path="/" component={IndexPage} />
+          <Route exact path="/ash" component={AshPage} />
+          <Route exact path="/mandu" component={ManduPage} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;

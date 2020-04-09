@@ -8,7 +8,7 @@ export interface ArticleState {
   articles: {
     data: Article[];
     loading: boolean;
-  }
+  };
 }
 
 const initialState: ArticleState = {
@@ -19,6 +19,6 @@ const initialState: ArticleState = {
 }
 
 export default createReducer<ArticleState, Actions>(initialState)
-.handleAction(actions.fetchArticleListAsync.request, (state) => ({ ...state,  articles: { ...state.articles, loading: true } }))
-.handleAction(actions.fetchArticleListAsync.success, (state, action) => ({ ...state,  articles: { data: action.payload, loading: false } }))
-.handleAction(actions.fetchArticleListAsync.failure, (state) => ({ ...state,  articles: { ...state.articles, loading: false } }))
+  .handleAction(actions.fetchArticleListAsync.request, (state) => ({ ...state,  articles: { ...state.articles, loading: true } }))
+  .handleAction(actions.fetchArticleListAsync.success, (state, action) => ({ ...state,  articles: { data: action.payload, loading: false } }))
+  .handleAction(actions.fetchArticleListAsync.failure, (state) => ({ ...state,  articles: { ...state.articles, loading: false } }))

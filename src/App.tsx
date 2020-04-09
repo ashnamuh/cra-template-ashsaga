@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-} from "react-router-dom";
+} from 'react-router-dom'
 import GlobalStyled from 'styles/global'
 import { Provider } from 'react-redux'
 import store from 'services/store'
@@ -41,5 +41,5 @@ export default function App() {
         </Router>
       </Provider>
     </>
-  );
+  )
 }

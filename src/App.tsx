@@ -5,6 +5,8 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import GlobalStyled from 'styles/global'
+
 import IndexPage from 'pages/index'
 import AshPage from 'pages/ash'
 import ManduPage from 'pages/mandu'
@@ -12,6 +14,7 @@ import ManduPage from 'pages/mandu'
 export default function App() {
   return (
     <Router>
+      <GlobalStyled />
       <div>
         <ul>
           <li>

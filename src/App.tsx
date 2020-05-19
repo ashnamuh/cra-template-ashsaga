@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link,
@@ -8,6 +7,8 @@ import {
 import GlobalStyled from 'styles/global'
 import { Provider } from 'react-redux'
 import store from 'services/store'
+import browserHistory from 'lib/history'
+import { ConnectedRouter } from 'connected-react-router'
 
 import IndexPage from 'pages/index'
 import AshPage from 'pages/ash'
@@ -18,7 +19,7 @@ export default function App() {
     <>
       <GlobalStyled />
       <Provider store={store}>
-        <Router>
+        <ConnectedRouter history={browserHistory}>
           <div>
             <ul>
               <li>
@@ -38,7 +39,7 @@ export default function App() {
               <Route exact path="/mandu" component={ManduPage} />
             </Switch>
           </div>
-        </Router>
+        </ConnectedRouter>
       </Provider>
     </>
   )

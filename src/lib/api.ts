@@ -1,6 +1,5 @@
 import axios, { AxiosError } from 'axios'
-
-const API_URL = 'https://conduit.productionready.io/api'
+import { API_URL } from 'constants/env'
 
 export interface ApiResponse<T> {
   data: T;

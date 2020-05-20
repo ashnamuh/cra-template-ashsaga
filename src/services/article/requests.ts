@@ -1,10 +1,10 @@
-import axios from 'axios'
+import api from 'lib/api'
 import { Article } from 'types/article'
 
 export const getArticles = async (offset?: number, limit?: number) => {
-  const { data } = await axios.request<{articlesCount: number; articles: Article[]}>({
+  const { data } = await api.request<{articlesCount: number; articles: Article[]}>({
     method: 'get',
-    url: 'https://conduit.productionready.io/api/articles',
+    url: '/articles',
     params: {
       limit: limit || 10,
       offset: offset || 0

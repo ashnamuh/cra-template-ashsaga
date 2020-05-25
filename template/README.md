@@ -1,20 +1,16 @@
-# react-redux-saga-typescript-boilerplate
+# project-by-cra-template-ashsaga
 
-A boilerplate for React, Redux and Typescript
-
-### Environment configurations
-#### System requirements
-* node.js >= v10
+This project created by [cra-template-ashsaga](https://github.com/ashnamuh/cra-template-ashsaga)
 
 
-#### Scripts
+## Scripts
 
 ``` bash
 # install dependencies
 $ npm install
 
 # run dev server
-$ npm run dev
+$ npm run start
 
 # check eslint
 $ npm run lint
@@ -24,5 +20,5 @@ $ npm run build
 ```
 
 
-### Author
+## Author
 Made by [ashnamuh](https://github.com/ashnamuh)

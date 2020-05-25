@@ -4,8 +4,7 @@ A boilerplate for React, Redux and Typescript
 
 ### Environment configurations
 #### System requirements
-* node.js >= v12
-* npm >= v6.7
+* node.js >= v10
 
 
 #### Scripts

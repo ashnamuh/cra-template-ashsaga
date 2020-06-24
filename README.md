@@ -31,6 +31,7 @@ yarn create react-app my-app --template ashsaga
 - [react-router](https://github.com/ReactTraining/react-router)
 - [connected-react-router](https://github.com/supasate/connected-react-router)
 - [styled-components 5.1.x](https://github.com/styled-components/styled-components)
+- [jest](https://github.com/facebook/jest)
 
 ## Support
 

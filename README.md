@@ -24,7 +24,7 @@ yarn create react-app my-app --template ashsaga
 
 ## Contains
 
-- [TypeScript 3.7.x](https://github.com/microsoft/TypeScript)
+- [TypeScript 3.9.x](https://github.com/microsoft/TypeScript)
 - [react-redux 7.2.x](https://github.com/reduxjs/react-redux)
 - [redux-saga](https://github.com/redux-saga/redux-saga)
 - [axios](https://github.com/axios/axios)

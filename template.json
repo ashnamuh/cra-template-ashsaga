@@ -29,13 +29,13 @@
       "reselect": "^4.0.0",
       "styled-components": "^5.1.0",
       "typesafe-actions": "^5.1.0",
-      "typescript": "^3.9.5"
+      "typescript": "^3.9.5",
+      "ts-jest": "^26.1.1"
     },
     "devDependencies": {
       "@babel/core": "^7.10.3",
       "@babel/preset-env": "^7.10.3",
-      "@babel/preset-typescript": "^7.10.1",
-      "ts-jest": "^26.1.1"
+      "@babel/preset-typescript": "^7.10.1"
     },
     "scripts": {
       "lint": "eslint . --ext .tsx --ext .ts --ext .js",

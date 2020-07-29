@@ -43,7 +43,7 @@
     },
     "scripts": {
       "lint": "eslint . --ext .tsx --ext .ts --ext .js",
-      "dev": "BROWSER=none react-app-rewired start",
+      "start": "BROWSER=none react-app-rewired start",
       "build": "react-app-rewired build",
       "test": "jest",
       "eject": "react-app-rewired eject"
